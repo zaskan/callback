@@ -1,0 +1,17 @@
+---
+- name: test add host
+  hosts: all
+  vars:
+  - ipaddr: 192.168.1.100
+  tasks:
+  - name: add host to inventory
+    add_host:
+      name: "{{ ipaddr }}"
+      groups: ipaddr
+​
+- hosts: ipaddr
+  gather_facts: no
+  tasks:
+  - name:
+    debug:
+      msg: "OK test"

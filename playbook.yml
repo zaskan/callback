@@ -8,8 +8,9 @@
     add_host:
       name: "{{ ipaddr }}"
       groups: ipaddr
----
-- hosts: ipaddr
+
+- name: second run
+  hosts: ipaddr
   gather_facts: no
   tasks:
   - name:

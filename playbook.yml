@@ -13,6 +13,6 @@
   hosts: ipaddr
   gather_facts: no
   tasks:
-  - name:
+  - name: second play
     debug:
       msg: "OK test"

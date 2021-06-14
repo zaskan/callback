@@ -9,10 +9,7 @@
       name: "{{ ipaddr }}"
       groups: ipaddr
 
-- name: second run
-  hosts: ipaddr
-  gather_facts: no
-  tasks:
   - name: second play
     debug:
       msg: "OK test"
+    delegate_to: "{{ ipaddr }}"

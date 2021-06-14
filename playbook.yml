@@ -1,6 +1,6 @@
 ---
 - name: test add host
-  hosts: localhost
+  hosts: all
   vars:
   - ipaddr: 192.168.1.100
   tasks:

@@ -1,6 +1,6 @@
 ---
 - name: test add host
-  hosts: dfgdfg
+  hosts: all
   vars:
   - ipaddr: 192.168.1.100
   tasks:
